@@ -1,0 +1,179 @@
+// #home {
+//     position: relative;
+//     // background: url('../../assets/bgIMG.png');
+//     background-size: cover;
+//     background-repeat: repeat;
+//     background-position: center;
+
+//     .app__wrapper {
+//         padding: 0;
+//     }
+//     .copyright {
+//         display: none;
+//     }
+// }
+
+// .app_header {
+//     flex: 1;
+//     width: 100%;
+//     height: 100%;
+//     flex-direction: row;
+
+//     padding: 6rem 2rem 0;
+//     @media screen and (min-width: 2000px) {
+//         padding-top: 8rem;
+//     }
+//     @media screen and (max-width: 1000px) {
+//         flex-direction: column;
+//     }
+//     @media screen and (max-width: 400px) {
+//         padding-top: 6rem 1rem 2rem;
+//     }
+// }
+
+// .app_header-info {
+//     flex: 0.65;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     height: 100%;
+
+//     @media screen and (max-width: 2000px) {
+//         width: 100%;
+//         margin-right: 0rem;
+//     }
+// }
+
+// .app_header-badge {
+//     width: 100%;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: flex-end;
+//     flex-direction: column;
+
+//     .badge-cmp, .tag-cmp {
+//         padding: 1rem 2rem;
+//         border: var(--white-color);
+//         border-radius: 15px;
+//         flex-direction: row;
+//         width: auto;
+//         box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+//     }
+// }
+
+
+  
+.header {
+    display: flex;
+    flex-direction: column; // Default stacking for smaller screens
+    align-items: center;
+    text-align: center;
+    padding: 15rem 2rem 0;
+    font-family: "Arial", sans-serif;
+    color: var(--white-color);
+  
+    &__main {
+      display: flex;
+      flex-direction: column; // Stack content and image by default
+      align-items: center;
+      width: 100%; // Ensure proper alignment
+  
+      @media (min-width: 900px) {
+        flex-direction: row; // Side by side for larger screens
+        justify-content: space-around; // Add space between content and image
+        text-align: left;
+        padding: 6rem 2rem 0;
+      }
+    }
+  
+    &__content {
+      max-width: 600px;
+      margin-bottom: 2rem;
+  
+      @media (min-width: 900px) {
+        margin-bottom: 0; // Remove margin for side-by-side layout
+      }
+    }
+  
+    &__name {
+      font-size: 2.5rem;
+      font-weight: bold;
+  
+      .header__wave {
+        font-size: 1.5rem;
+      }
+    }
+  
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0.5rem 0;
+    }
+  
+    &__description {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+      color: var(--white-color);
+    }
+  
+    &__button {
+      background-color: var(--silverGray-color);
+      color: var(--black-color);
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: var(--white-color);
+      }
+    }
+
+    &__image {
+        background: url(../../assets/profile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 
+            inset 0 0 0 8px rgba(255, 255, 255, 0.5),  
+            0 0 15px rgba(255, 255, 255, 0.9);  
+        order: 1;
+        justify-self: center;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        animation: profile_animation 8s ease-in-out infinite 1s;
+        z-index: 5;
+    }
+
+  
+    &__scroll {
+      margin-top: 2rem; // Create space below the header
+      font-size: 0.9rem; 
+      display: flex;
+      align-items: center;
+      color: var(--silverGray-color);
+      &:hover {
+        color: var(--white-color);
+      }
+    }
+}
+
+@keyframes profile_animation {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 40% 60% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60 30% 70% 40%;
+    }
+}
+
+  
