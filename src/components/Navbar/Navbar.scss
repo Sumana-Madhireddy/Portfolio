@@ -1,14 +1,9 @@
 .app__navbar {
     width: 100%;
     display: flex;
-    // justify-content: space-between;
     justify-content: center; //edited
     align-items: center;
     padding: 1rem 2rem;
-    // background: rgba(255, 255, 255, 0.25);
-    backdrop-filter:  blur(4px);
-    -webkit-backdrop-filter:  blur(4px);
-    // border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
     
@@ -46,6 +41,8 @@
 
     border-radius: 30px; //edited
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); //edited
+    backdrop-filter:  blur(4px);
+    -webkit-backdrop-filter:  blur(4px);
 
     li {
         margin: 0 1rem; 
