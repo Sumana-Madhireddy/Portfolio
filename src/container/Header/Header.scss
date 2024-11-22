@@ -22,8 +22,8 @@
     }
   
     &__content {
-      max-width: 600px;
-      margin-bottom: 2rem;
+      max-width: 800px;
+      margin-bottom: 4rem;
   
       @media (min-width: 900px) {
         margin-bottom: 0; // Remove margin for side-by-side layout
@@ -33,16 +33,21 @@
     &__name {
       font-size: 2.5rem;
       font-weight: bold;
+      font-family: "Merriweather", serif;
+      color: var(--white-color); // Default color for the whole text
+      margin-bottom: 0.5rem;
+      
+      .header__hello {
+        color: var(--goldenYellow-color); // Explicit white color for "Hello,"
+      }
+      
+      .header__name-highlight {
+        color: var(--white-color); // Golden yellow color for "I'm Sumana Madhireddy"
+      }
   
       .header__wave {
         font-size: 1.5rem;
       }
-    }
-  
-    &__title {
-      font-size: 1.5rem;
-      font-weight: 400;
-      margin: 0.5rem 0;
     }
   
     &__description {

@@ -56,8 +56,11 @@ const Header = () => {
           className='header__content'
         >
           <h1 className="header__name">
-            Sumana Madhireddy <span className="header__wave">👋</span>
+            <span className="header__hello">Hello,</span> 
+            <span className="header__wave">👋</span>
+            <span className="header__name-highlight"> I'm Sumana Madhireddy</span>
           </h1>
+
           <p className="header__description">
           Software developer with experience in full-stack development, building practical solutions focused on creating efficient, user-friendly applications.
           </p>
