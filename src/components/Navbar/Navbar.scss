@@ -1,7 +1,7 @@
 .app__navbar {
     width: 100%;
     display: flex;
-    justify-content: center; //edited
+    justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
     position: fixed;
@@ -14,12 +14,10 @@
 
 .app__navbar-name {
     display: flex;
-    // justify-content: flex-start;
     align-items: center;
-    color: var(--silverGray-color); //edited
+    color: var(--silverGray-color);
     &:hover {
-        // color: var(--secondary-color);
-        color: var(--white-color); //edited
+        color: var(--goldenYellow-color);
     }
     img {
         width: 90px;
@@ -33,20 +31,19 @@
 }
 
 .app__navbar-links {
-    // flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 
-    border-radius: 30px; //edited
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); //edited
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
     backdrop-filter:  blur(4px);
     -webkit-backdrop-filter:  blur(4px);
 
     li {
         margin: 0 1rem; 
-        margin-bottom: 10px; //edited bottom margin
+        margin-bottom: 10px;
         cursor: pointer;
         flex-direction: column;
 
@@ -59,22 +56,19 @@
         }
     
         a {
-            // color: var(--gray-color);
-            color: var(--silverGray-color); //edited
+            color: var(--silverGray-color);
             text-decoration: none;
             flex-direction: column;
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;
             &:hover {
-                // color: var(--secondary-color);
-                color: var(--white-color); //edited
+                color: var(--goldenYellow-color);
             }
         }
         &:hover {
             div{
-                // background: var(--secondary-color);
-                background: var(--white-color); //edited
+                background: var(--goldenYellow-color); 
             }
         }
     }
@@ -93,16 +87,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: var(--secondary-color);
 
     svg {
         width: 70%;
         height: 70%;
-        // color: var(--white-color);
-        color: var(--silverGray-color); //edited
+        color: var(--silverGray-color);
         &:hover {
-            // color: var(--secondary-color);
-            color: var(--white-color); //edited
+            color: var(--goldenYellow-color);
         }
     }
     div {
@@ -121,8 +112,7 @@
         align-items: flex-end;
         flex-direction: column;
 
-        // background-color: var(--white-color);
-        background-color: var(--black-color); //edited
+        background-color: var(--black-color);
         background-size: cover;
         background-repeat: repeat;
         box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
@@ -130,12 +120,10 @@
         svg {
             width: 35px;
             height: 35px;
-            // color: var(--secondary-color);
-            color: var(--silverGray-color); //edited
+            color: var(--silverGray-color);
             margin: 0.5rem 1rem;
             &:hover {
-                // color: var(--secondary-color);
-                color: var(--white-color); //edited
+                color: var(--goldenYellow-color);
             }
         }
         ul {
@@ -153,8 +141,7 @@
                 margin: 1rem;
 
                 a {
-                    // color: var(--gray-color);
-                    color: var(--silverGray-color); //edited
+                    color: var(--silverGray-color);
                     text-decoration: none;
                     font-size: 1rem;
                     font-weight: 500;
@@ -162,7 +149,7 @@
                     font-weight: 500;
                     transition: all 0.3s ease-in-out;
                     &:hover {
-                        color: var(--white-color);
+                        color: var(--goldenYellow-color);
                     }
                 }
             }

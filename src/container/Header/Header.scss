@@ -3,8 +3,8 @@
     flex-direction: column; // Default stacking for smaller screens
     align-items: center;
     text-align: center;
-    padding: 8rem 2rem 0;
-    font-family: "Arial", sans-serif;
+    padding: 6rem 2rem 0;
+    font-family: "JetBrains Mono", monospace;
     color: var(--white-color);
   
     &__main {
@@ -22,36 +22,36 @@
     }
   
     &__content {
-      max-width: 800px;
+      max-width: 600px;
       margin-bottom: 4rem;
       display: flex;
-      flex-direction: column; // Stack elements vertically
-      align-items: center; // Center align horizontally
-      justify-content: center; // Center align vertically
-      text-align: center; // Center text alignment
-      // margin: 0 auto; // Center horizontally within the container
-      height: 100%; // Optional: Ensure it takes the full height of the parent
-      gap: 1.5rem; // Adds spacing between elements
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      text-align: center; 
+      
+      height: 100%; 
+      // gap: 1.5rem; 
   
       @media (min-width: 900px) {
-        // margin-bottom: 0; // Remove margin for side-by-side layout
+        align-items: flex-start;
         justify-content: flex-start;
+        text-align: start;
       }
     }
   
     &__name {
-      font-size: 2.5rem;
-      font-weight: bold;
-      font-family: "Merriweather", serif;
-      color: var(--white-color); // Default color for the whole text
+      font-size: 3rem;
+      font-family: "JetBrains Mono", monospace;
+      color: var(--white-color); 
       margin-bottom: 0.5rem;
       
       .header__hello {
-        color: var(--goldenYellow-color); // Explicit white color for "Hello,"
+        color: var(--white-color); 
       }
       
       .header__name-highlight {
-        color: var(--white-color); // Golden yellow color for "I'm Sumana Madhireddy"
+        color: var(--goldenYellow-color);
       }
   
       .header__wave {
@@ -76,6 +76,7 @@
       font-size: 1rem;
       transition: background-color 0.3s;
       z-index: 10;
+      font-family: "JetBrains Mono", monospace;
   
       &:hover {
         transform: scale(1.1); // Slightly enlarges the button

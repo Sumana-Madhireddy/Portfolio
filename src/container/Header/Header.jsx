@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import "./Header.scss";
-import { BsSendFill } from "react-icons/bs";
 import { BsMouse } from "react-icons/bs";
+import { GoDownload } from "react-icons/go";
 import { motion } from 'framer-motion';
 
 const Header = () => {
@@ -56,14 +56,24 @@ const Header = () => {
           className="header__content"
         >
           {/* Name */}
-          <motion.h1
+          <motion.p
+            className="header__description"
+            variants={headerItemVariants}
+          >
+            Software Developer
+          </motion.p>
+          <motion.p
             className="header__name"
             variants={headerItemVariants}
           >
-            <span className="header__hello">Hello,</span>
-            <span className="header__wave">👋</span>
-            <span className="header__name-highlight"> I'm Sumana Madhireddy</span>
-          </motion.h1>
+            <span className="header__hello">Hello, I'm </span>
+          </motion.p>
+          <motion.p
+            className="header__name"
+            variants={headerItemVariants}
+          >
+            <span className="header__name-highlight">Sumana Madhireddy</span>
+          </motion.p>
 
           {/* Description */}
           <motion.p
@@ -83,7 +93,7 @@ const Header = () => {
             }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Say Hello <BsSendFill />
+            Download Resume <GoDownload  />
           </motion.button>
         </motion.div>
 
