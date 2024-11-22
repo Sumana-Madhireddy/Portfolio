@@ -24,9 +24,18 @@
     &__content {
       max-width: 800px;
       margin-bottom: 4rem;
+      display: flex;
+      flex-direction: column; // Stack elements vertically
+      align-items: center; // Center align horizontally
+      justify-content: center; // Center align vertically
+      text-align: center; // Center text alignment
+      // margin: 0 auto; // Center horizontally within the container
+      height: 100%; // Optional: Ensure it takes the full height of the parent
+      gap: 1.5rem; // Adds spacing between elements
   
       @media (min-width: 900px) {
-        margin-bottom: 0; // Remove margin for side-by-side layout
+        // margin-bottom: 0; // Remove margin for side-by-side layout
+        justify-content: flex-start;
       }
     }
   
@@ -58,7 +67,7 @@
     }
   
     &__button {
-      background-color: var(--silverGray-color);
+      background-color: var(--goldenYellow-color);
       color: var(--black-color);
       padding: 0.8rem 1.5rem;
       border: none;
@@ -66,9 +75,11 @@
       cursor: pointer;
       font-size: 1rem;
       transition: background-color 0.3s;
+      z-index: 10;
   
       &:hover {
-        background-color: var(--white-color);
+        transform: scale(1.1); // Slightly enlarges the button
+        box-shadow: 0 5px 15px rgba(255, 223, 0, 0.6);
       }
     }
 
@@ -99,6 +110,7 @@
       color: var(--silverGray-color);
       &:hover {
         color: var(--white-color);
+        cursor: pointer;
       }
     }
 }
