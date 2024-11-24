@@ -84,6 +84,7 @@
 import React, { useState } from "react";
 import "./Skills.scss";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 import { images } from "../../constants";
 
 const skills = [
@@ -126,7 +127,7 @@ const Skills = () => {
       className="skills"
     >
       {/* Heading Animation */}
-      <motion.div
+      {/* <motion.div
         className="skills__heading"
         variants={headingVariants}
         initial="hidden"
@@ -134,10 +135,23 @@ const Skills = () => {
         onViewportEnter={() => setAnimationKey((prev) => prev + 1)}
         viewport={{ once: false, amount: 0.5 }}
       >
-        {/* <p className={`typewriter ${isTyping ? "active" : ""}`}>Skills</p> */}
         <p key={animationKey}  className="typewriter">
           Skills
         </p>
+      </motion.div> */}
+      <motion.div
+        className="skills__heading"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Typewriter
+          options={{
+            strings: ["Skills"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </motion.div>
 
       {/* Skills Container */}
@@ -157,12 +171,15 @@ const Skills = () => {
               duration: 0.4,
               ease: "easeOut",
               delay: index * 0.1,
-              type: "spring",
-              stiffness: 500,
+              // type: "spring",
+              // stiffness: 500,
             }}
-            whileHover={{ scale: 1.1 }}
+            // whileHover={{ scale: 1.1 }}
           >
-            <img src={skill.icon} alt={skill.name} />
+            <motion.img 
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 500 }}
+              src={skill.icon} alt={skill.name} />
             <p>{skill.name}</p>
           </motion.div>
         ))}

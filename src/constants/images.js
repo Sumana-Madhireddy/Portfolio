@@ -25,8 +25,8 @@ import docker from '../assets/docker.png';
 
 import aws from '../assets/aws.png';
 import firebase from '../assets/firebase.png';
-import about03 from '../assets/about03.png';
-import about04 from '../assets/about04.png';
+import deloitte from '../assets/deloitte.png';
+import redprint from '../assets/redprint.png';
 
 import profile from '../assets/profile.jpg';
 import circle from '../assets/circle.svg';
@@ -66,8 +66,8 @@ export default {
   docker,
   aws,
   firebase,
-  about03,
-  about04,
+  deloitte,
+  redprint,
   profile,
   circle,
   logo,

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 import { IoCodeSlash } from "react-icons/io5";
 import { AiOutlineDatabase } from "react-icons/ai";
 import { CiMobile3 } from "react-icons/ci";
 
 function About() {
-  const [isVisible, setIsVisible] = useState(false);
-  const [isTyping, setIsTyping] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false);
+  // const [isTyping, setIsTyping] = useState(false);
   const [animationKey, setAnimationKey] = useState(0); 
 
   const headingVariants = {
@@ -65,10 +66,12 @@ function About() {
   };
 
   return (
-    <section id="about" className="about__me" onMouseEnter={() => setIsTyping(true)}
-    onMouseLeave={() => setIsTyping(false)}>
+    <section id="about" className="about__me" 
+    // onMouseEnter={() => setIsTyping(true)}
+    // onMouseLeave={() => setIsTyping(false)}
+    >
       {/* Heading Animation with Typewriter Effect */}
-      <motion.div
+      {/* <motion.div
         className="overview"
         variants={headingVariants}
         initial="hidden"
@@ -83,8 +86,21 @@ function About() {
         //   }
         // }}
       >
-        {/* <h1 className={isVisible ? "typewriter" : ""}>About <span>me</span></h1> */}
         <h1 key={animationKey}  className="typewriter">About <span>me</span></h1>
+      </motion.div> */}
+      <motion.div
+        className="overview"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Typewriter
+          options={{
+            strings: ["About me"],
+            autoStart: true,
+            loop: true,
+          }}
+        />
       </motion.div>
 
       {/* Paragraph Animation */}
