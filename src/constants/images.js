@@ -21,20 +21,20 @@ import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import mysql from '../assets/mysql.png';
 import docker from '../assets/docker.png';
-
-
 import aws from '../assets/aws.png';
 import firebase from '../assets/firebase.png';
+
 import deloitte from '../assets/deloitte.png';
 import redprint from '../assets/redprint.png';
 
 import profile from '../assets/profile.jpg';
-import circle from '../assets/circle.svg';
-import logo from '../assets/logo.png';
 
-import adidas from '../assets/adidas.png';
-import amazon from '../assets/amazon.png';
-import asus from '../assets/asus.png';
+import solenne from '../assets/solenne.png';
+import swinunet from '../assets/swinunet.png';
+import language_translation from '../assets/language_translation.png';
+import animefilmpulse from '../assets/animefilmpulse.png';
+import churnprediction from '../assets/churnprediction.png';
+
 import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
@@ -69,11 +69,11 @@ export default {
   deloitte,
   redprint,
   profile,
-  circle,
-  logo,
-  adidas,
-  amazon,
-  asus,
+  swinunet,
+  solenne,
+  language_translation,
+  animefilmpulse,
+  churnprediction,
   bolt,
   nb,
   skype,
