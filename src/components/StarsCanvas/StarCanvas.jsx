@@ -3,7 +3,7 @@ import Star from './Star';
 import './StarsCanvas.scss';
 
 const StarsCanvas = () => {
-  const numStars = 100; // Set the number of stars
+  const numStars = 100; 
 
   return (
     <div className="stars-canvas">
