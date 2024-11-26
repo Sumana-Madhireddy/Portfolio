@@ -1,0 +1,82 @@
+.footer {
+    background-color: #030303; /* Matches your portfolio theme */
+    color: #e4e4e4; /* Light gray for text */
+    text-align: center;
+    padding: 2rem 1rem;
+  
+    &__content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  
+    &__info {
+      margin-bottom: 1.5rem;
+  
+      h2 {
+        font-size: 1.8rem;
+        // color: #ffffff;
+        color: var(--goldenYellow-color);
+      }
+  
+      p {
+        font-size: 1rem;
+        // color: #c0c0c0;
+        // color: #f7d033dc;
+      }
+    }
+  
+    &__socials {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+  
+      .social-link {
+        font-size: 2rem;
+        color: #e4e4e4;
+        // color: var(--goldenYellow-color);
+        transition: transform 0.3s, color 0.3s;
+  
+        &:hover {
+          transform: scale(1.2);
+        //   color: #ffffff;
+          color: var(--goldenYellow-color);
+        }
+      }
+    }
+  
+    &__bottom {
+      font-size: 0.9rem;
+    //   color: #6b7688;
+      color: #e4e4e4;
+      p {
+        margin: 0;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      &__socials {
+        gap: 0.8rem;
+  
+        .social-link {
+          font-size: 1.5rem;
+        }
+      }
+  
+      &__info {
+        h2 {
+          font-size: 1.5rem;
+        }
+  
+        p {
+          font-size: 0.9rem;
+        }
+      }
+  
+      &__bottom {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  

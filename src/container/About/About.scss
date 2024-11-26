@@ -24,10 +24,6 @@
       width: 0;
       transition: opacity 0.5s ease; 
       animation: typing 1s steps(8) 1s forwards, blink 0.75s step-end infinite;
-      // &.active {
-      //   animation: typing 1s steps(8) 1s forwards, blink 0.75s step-end infinite;
-      //   opacity: 1; // Become visible when active
-      // }
 
       span {
         color: var(--goldenYellow-color);
@@ -37,29 +33,13 @@
     p {
       font-size: 1.2rem;
       color: #ccc;
-      max-width: 800px;
+      max-width: 1000px;
       margin: 20px auto;
       text-align: left;
       line-height: 1.6;
     }
   }
 
-  /* Typewriter Animation */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-  /* Blinking Cursor */
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
 
   .cards {
     display: flex;
@@ -91,4 +71,3 @@
     }
   }
 }
-

@@ -3,8 +3,12 @@ import images from "./images";
 const projects = [
   {
     title: "Solenne E-commerce Website",
-    description:
-      "A comprehensive online shopping platform providing a seamless and intuitive shopping experience.",
+    // description: "Solenne is a dynamic e-commerce platform designed for both customers and admins, featuring a comprehensive admin dashboard, efficient order and cart management, and secure payment integration. It offers a seamless shopping experience with a fully responsive UI, ensuring smooth user interaction across devices. Built with modern technologies like React, Node.js, and PostgreSQL, Solenne focuses on performance, security, and scalability.",
+    description: [
+      "Solenne is a dynamic e-commerce platform designed for both customers and admins, featuring a comprehensive admin dashboard, efficient order and cart management, and secure payment integration.",
+      "It offers a seamless shopping experience with a fully responsive UI, ensuring smooth user interaction across devices.",
+      "Built with modern technologies like React, Node.js, and PostgreSQL, Solenne focuses on performance, security, and scalability."
+    ],
     image: images.solenne, 
     technologies: [
       "React",
@@ -22,26 +26,25 @@ const projects = [
       end: "Ongoing",
     },
     details: `
-        A comprehensive online shopping platform offering a diverse range of products. 
-        The platform features user-friendly navigation, secure authentication, and a fully responsive design 
-        for mobile, tablet, and desktop users. 
-  
-        ▪ Designed and implemented the entire frontend using React and Tailwind CSS, ensuring a responsive, dynamic user 
-        interface for optimized user experience across all devices. 
+        Designed a user-friendly admin dashboard for managing products, users, and orders, allowing admins to efficiently handle store operations and monitor sales.
         
-        ▪ Developed a secure authentication system using Node.js, Express, and PostgreSQL, enabling seamless user 
-        registration, login, and session management focusing on security and user data privacy. 
-  
-        ▪ Integrated payment processing using Stripe with industry-standard encryption and fraud detection, ensuring secure 
-        and efficient transactions for customers purchasing products. 
-  
-        ▪ Built a robust order management system using Sequelize ORM and PostgreSQL, providing users with real-time 
-        order tracking, inventory management, and seamless checkout flow.
+        Developed secure authentication using Node.js, Express, and PostgreSQL, ensuring safe login, registration, and session management for users.
+        
+        Integrated Stripe for secure payment processing, enabling seamless and encrypted transactions for customers.
+        
+        Implemented a robust order and cart management system with real-time tracking, inventory management, and streamlined checkout using Sequelize ORM and PostgreSQL.
+        
+        Focused on creating a responsive, mobile-first design with React and Tailwind CSS for an optimized experience across all devices.
       `,
+    team: [
+    ],
   },
   {
     title: "Dense Crowd Counting using Swin-UNet",
-    description: "Developed a Swin-UNet model for crowd counting.",
+    description: [
+      "A hybrid deep learning architecture combining U-Net with Swin Transformers for accurate dense crowd counting.",
+      "Trained on large crowd counting datasets (UCF-QNRF, ShanghaiTech, UCF-CC-50) to estimate crowd density and head counts in highly congested areas.",
+    ],
     image: images.swinunet,
     technologies: ["Python", "PyTorch", "OpenCV", "Swin-Transformers", "U-Net"],
     github: "https://github.com/ubcse573-vs/project-groups-project_keshavku_sumanama",
@@ -50,22 +53,30 @@ const projects = [
       end: "August 2024",
     },
     details: `
-        Developed a Swin-WNet model combining Swin Transformers and W-Net, achieving an MAE of 260.48 on the UCF-QNRF dataset. 
-        Implemented a custom loss function (MAE + BCE) to improve head localization and crowd count accuracy.
+        The model processes images through a Swin-UNet architecture, generating density maps to estimate crowd count.
+        Three branches in the network: Encoder for feature extraction, Density Map Estimation (DME) for crowd density, and a reinforcement branch for faster convergence.
+        Utilizes a combined loss function of Mean Absolute Error (MAE) for density maps and Binary Cross Entropy (BCE) for reinforcement maps.
+        Evaluated on multiple public datasets (UCF-QNRF, ShanghaiTech Part-A, UCF-CC-50) to ensure robustness in diverse crowd scenarios.
       `,
+    team: [
+      { name: "Keshav", image: images.keshav , linkedin: "https://www.linkedin.com/in/keshkuma/"},
+    ],
   },
   {
     title: "Convergence of Senses: A Multimodal Approach for Translation",
-    description:
-      "Developed a Seq2seq language translation model using transformers, integrating speech recognition and text input to enhance accessibility.",
+    // description:
+    //   "Developed a Seq2seq language translation model using transformers, integrating speech recognition and text input to enhance accessibility.",
+    description: [
+      "Developed a Seq2seq language translation model using transformers, combining speech recognition and text input to improve accessibility.",
+      "Enhanced model performance by integrating time-series analysis, pattern recognition, and NLP techniques, reducing translation errors and improving accuracy."
+    ],
     image: images.language_translation, 
     technologies: [
       "Python",
       "PyTorch",
-      // "NumPy",
-      // "Matplotlib",
-      // "Keras",
-      // "TensorFlow",
+      "NumPy",
+      "Matplotlib",
+      "TensorFlow",
       "Spacy",
       "Torchtext",
       "Time-series analysis",
@@ -91,12 +102,17 @@ const projects = [
         
         ▪ Visualized and optimized model performance using Matplotlib, resulting in a 30% reduction in errors for complex 
         sentence structures across multiple languages.
-      `,
+    `,
+    team: [
+      { name: "Revathi", image: images.Revathi, linkedin: "https://www.linkedin.com/in/revathi-gollapudi-a60894187/" },
+    ],
   },
   {
     title: "Anime Film Pulse Database System",
-    description:
-      "Designed a centralized SQL-based database for comprehensive anime film information, improving industry data accessibility.",
+    description: [
+      "Developed a centralized SQL-based database system to manage and provide comprehensive information on over 5,000 anime films, enhancing data accessibility in the anime industry.",
+      "Utilized PostgreSQL, Python, Pandas, and NumPy to automate data processing, optimize queries, and improve efficiency for industry analysts."
+    ],
     image: images.animefilmpulse,
     technologies: ["SQL", "PostgreSQL", "DBMS", "Python", "Pandas", "NumPy"],
     github: "https://github.com/your-repo",
@@ -117,6 +133,10 @@ const projects = [
         ▪ Integrated Python, Pandas, and NumPy to automate data cleaning and preprocessing, reducing manual data handling 
         time by 30% and ensuring data consistency across the platform.
       `,
+    team: [
+      { name: "Revathi", image: images.Revathi, linkedin: "https://www.linkedin.com/in/revathi-gollapudi-a60894187/" },
+      { name: "Lahari", image: images.Lahari, linkedin: "https://www.linkedin.com/in/lahari-jagarlamudi/" },
+    ],
   },
   {
     // title: "Forecasting Telecom Customer Churn for Proactive Retention and Business Success",
@@ -135,6 +155,10 @@ const projects = [
         of enabling proactive retention measures for profitability. After thorough evaluation, the Random Forest classifier 
         was chosen for its higher performance.
       `,
+    team: [
+      { name: "Revathi", image: images.Revathi, linkedin: "https://www.linkedin.com/in/revathi-gollapudi-a60894187/"  },
+      { name: "Srikar", image: images.Srikar, linkedin: "https://www.linkedin.com/in/srikarchintha/" },
+    ],
   },
 ];
 

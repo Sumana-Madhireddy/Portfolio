@@ -28,6 +28,10 @@ import deloitte from '../assets/deloitte.png';
 import redprint from '../assets/redprint.png';
 
 import profile from '../assets/profile.jpg';
+import keshav from '../assets/keshav.jpg';
+import Revathi from '../assets/Revathi.png';
+import Lahari from '../assets/Lahari.jpg';
+import Srikar from '../assets/srikar.jpg';
 
 import solenne from '../assets/solenne.png';
 import swinunet from '../assets/swinunet.png';
@@ -69,6 +73,10 @@ export default {
   deloitte,
   redprint,
   profile,
+  keshav,
+  Revathi,
+  Srikar,
+  Lahari,
   swinunet,
   solenne,
   language_translation,
