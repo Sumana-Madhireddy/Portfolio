@@ -166,12 +166,15 @@
 //   }
 // }
 
+
+
+
 .about-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-top: 50px;
   padding: 6rem 2rem;
   color: #ffffff;
   font-family: "JetBrains Mono", monospace;
@@ -203,6 +206,7 @@
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+    perspective: 1000px; 
 
     .tile {
       background-color: #2d2d2d;
@@ -215,6 +219,7 @@
       justify-content: center;
       align-items: center;
       transition: transform 0.3s ease;
+      transform: translateZ(30px);
 
       h2,
       h3 {
@@ -229,38 +234,66 @@
 
     /* Unique Tile Sizes */
     .intro-tile {
-      grid-column: span 6;
-      grid-row: span 2;
+      grid-column: span 7;
+      grid-row: span 3;
     }
 
     .role-tile {
-      grid-column: span 2;
-      grid-row: span 2;
+      grid-column: span 3;
+      grid-row: span 3;
     }
 
     .skills-tile {
-      grid-column: span 6;
-      grid-row: span 4;
+      grid-column: span 5;
+      grid-row: span 6;
+      .skills-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        div {
+          background-color: var(--goldenYellow-color);
+          color: var(--black-color);
+          padding: 3px 10px;
+          border-radius: 30px;
+          text-align: center;
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          p {
+            margin-left: 5px;
+            font-family: "JetBrains Mono", monospace;
+          }
+        }
+      }
     }
 
     .quote-tile {
       grid-column: span 4;
-      grid-row: span 1;
+      grid-row: span 2;
     }
 
     .info1-tile {
       grid-column: span 4;
-      grid-row: span 2;
+      grid-row: span 3;
     }
 
     .info2-tile {
       grid-column: span 8;
-      grid-row: span 1;
+      grid-row: span 2;
+    }
+
+    span {
+      color: var(--goldenYellow-color);
     }
   }
 
   /* Responsive Design */
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .tiles-container {
       grid-template-columns: repeat(6, 1fr); /* Reduce to 6-column grid */
     }
