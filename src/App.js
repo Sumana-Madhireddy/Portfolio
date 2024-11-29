@@ -1,5 +1,5 @@
 import React from 'react';
-import {About, Footer, Header, Skills, Work, Testimonials, Education, Projects } from './container';
+import {About, Footer, Header, Skills, Work, Education, Projects } from './container';
 import { Navbar } from './components';
 import './App.scss';
 import StarsCanvas from './components/StarsCanvas/StarCanvas';
@@ -15,7 +15,6 @@ const App = () => {
             <Work/>
             <Projects/>
             <Education/>
-            <Testimonials/>
             <Footer/>
         </div>
     )

@@ -128,4 +128,33 @@
     }
 }
 
+.header__button-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; // Add some space between the button and social icons
+}
+
+.header__socials {
+  display: flex;
+  gap: 1rem; // Space out the icons
+}
+
+.header__social-icon {
+  font-size: 2rem;
+  color: var(--white-color);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:hover {
+    color: var(--goldenYellow-color);
+  }
+}
+
+.header__social-icon > svg {
+  transition: transform 0.3s ease;
+}
+
   
