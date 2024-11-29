@@ -1,9 +1,16 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaLeetcode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaAngleDoubleUp } from "react-icons/fa"; 
 import { SiLeetcode } from "react-icons/si";
 import "./Footer.scss";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer id="contact" className="footer">
       <div className="footer__content">
@@ -29,10 +36,7 @@ const Footer = () => {
           >
             <FaLinkedin />
           </a>
-          <a
-            href="mailto:sumanamadhireddy3@gmail.com"
-            className="social-link"
-          >
+          <a href="mailto:sumanamadhireddy3@gmail.com" className="social-link">
             <FaEnvelope />
           </a>
           {/* <a
@@ -47,9 +51,12 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom">
-        <p>
-          © {new Date().getFullYear()} · Built with ❤️️ Sumana
-        </p>
+        <p>© {new Date().getFullYear()} · Built with ❤️️ Sumana</p>
+      </div>
+
+      {/* Scroll to Top Icon */}
+      <div className="scroll-to-top" onClick={scrollToTop}>
+        <FaAngleDoubleUp />
       </div>
     </footer>
   );
