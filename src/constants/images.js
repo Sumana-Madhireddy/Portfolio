@@ -1,5 +1,3 @@
-import email from '../assets/email.png';
-import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import c from '../assets/c.png';
 import csharpe from '../assets/c#.png';
@@ -9,10 +7,8 @@ import css from '../assets/css.png';
 import mongodb from '../assets/mongodb.png';
 import postgresql from '../assets/postgresql.png';
 import git from '../assets/git.png';
-import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
-import mu5 from '../assets/mu5.png';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
@@ -39,14 +35,7 @@ import language_translation from '../assets/language_translation.png';
 import animefilmpulse from '../assets/animefilmpulse.png';
 import churnprediction from '../assets/churnprediction.png';
 
-import bolt from '../assets/bolt.png';
-import nb from '../assets/nb.png';
-import skype from '../assets/skype.png';
-import spotify from '../assets/spotify.png';
-
 export default {
-  email,
-  mobile,
   api,
   c,
   csharpe,
@@ -56,10 +45,8 @@ export default {
   mongodb,
   postgresql,
   git,
-  graphql,
   html,
   javascript,
-  mu5,
   node,
   python,
   react,
@@ -82,8 +69,4 @@ export default {
   language_translation,
   animefilmpulse,
   churnprediction,
-  bolt,
-  nb,
-  skype,
-  spotify,
 };

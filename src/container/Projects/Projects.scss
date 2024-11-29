@@ -5,13 +5,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // margin: 50px 0;
+
+  @media (max-width: 1200px) {
+    padding: 4rem 5rem; 
+  }
+
+  @media (max-width: 1000px) {
+    padding: 3rem 2rem; 
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 1rem; 
+  }
 }
 
 .projects_title {
   margin-bottom: 3rem;
   font-size: 2.5rem;
   color: white;
+
+  @media (max-width: 1000px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.8rem; 
+  }
 }
 
 .projects__list {
@@ -23,17 +42,24 @@
 
 .project-card-horizontal {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   background-color: #2a2a2a;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  // cursor: pointer;
   padding: 1rem;
-  padding-bottom: 2rem;
   color: #e4e4e4;
-  margin-bottom: 1rem;
   position: relative;
+
+  @media (max-width: 1000px) {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.8rem; 
+  }
 }
 
 .project-card-horizontal:hover {
@@ -43,9 +69,16 @@
 .project-card-horizontal__image {
   width: 380px;
   height: 200px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 8px;
   margin-right: 1rem;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: auto; 
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 .project-card-horizontal__details {
@@ -55,23 +88,51 @@
   h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.3rem; 
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.2rem; 
+    }
   }
 
   p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
+
+    @media (max-width: 480px) {
+      font-size: 0.9rem; 
+    }
   }
+
   .project-description ul {
-    list-style-type: disc; 
-    padding-left: 20px;    
-    color: #e4e4e4;        
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #e4e4e4;
+
+    @media (max-width: 1000px) {
+      padding-left: 15px; 
+    }
+
+    @media (max-width: 480px) {
+      padding-left: 10px; 
+    }
   }
-  
+
   .project-description li {
-    font-size: 1rem;       
-    margin-bottom: 0.5rem; 
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 1000px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.8rem;
+    }
   }
-  
 }
 
 .project-card-horizontal__techs {
@@ -79,6 +140,10 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: 1rem 0;
+
+  @media (max-width: 1000px) {
+    justify-content: center; 
+  }
 }
 
 .tech-badge {
@@ -87,6 +152,10 @@
   padding: 0.2rem 0.7rem;
   border-radius: 20px;
   font-size: 0.9rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem; 
+  }
 }
 
 .project-card-horizontal__github {
@@ -104,10 +173,12 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
-}
 
-.project-card-horizontal__team {
-  display: flex;
+  @media (max-width: 1000px) {
+    flex-direction: row; 
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .team-member {
@@ -120,17 +191,11 @@
   &:hover {
     transform: scale(1.1);
   }
-}
 
-
-.project-card-horizontal__github {
-  font-size: 1.5rem;
-  color: var(--goldenYellow-color);
-  transition: color 0.3s ease;
-}
-
-.project-card-horizontal__github:hover {
-  color: #ffffff;
+  @media (max-width: 480px) {
+    width: 30px;
+    height: 30px; 
+  }
 }
 
 .see-more-btn {
@@ -141,42 +206,21 @@
   cursor: pointer;
   padding: 0.5rem;
   transition: color 0.3s;
-
   display: flex;
-  align-items:end;
+  align-items: center;
   gap: 0.2rem;
-}
 
-.see-more-btn:hover {
-  color: var(--goldenYellow-color);
+  @media (max-width: 480px) {
+    font-size: 0.9rem; 
+  }
 }
 
 .full-description {
   margin-top: 1rem;
   color: #e4e4e4;
   font-size: 1rem;
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem; 
+  }
 }
-
-
-// .modal {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.7);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   z-index: 1000;
-// }
-
-// .modal-content {
-//   background-color: #2a2a2a;
-//   color: #e4e4e4;
-//   padding: 2rem;
-//   width: 70%;
-//   max-width: 900px;
-//   border-radius: 10px;
-//   overflow-y: auto;
-// }

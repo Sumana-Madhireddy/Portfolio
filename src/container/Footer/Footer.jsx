@@ -14,7 +14,7 @@ const Footer = () => {
 
         <div className="footer__socials">
           <a
-            href="https://github.com/yourgithubusername"
+            href="https://github.com/Sumana-Madhireddy/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -22,7 +22,7 @@ const Footer = () => {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/yourlinkedinusername"
+            href="https://www.linkedin.com/in/sumana-madhireddy-b8aa49186/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -30,19 +30,19 @@ const Footer = () => {
             <FaLinkedin />
           </a>
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:sumanamadhireddy3@gmail.com"
             className="social-link"
           >
             <FaEnvelope />
           </a>
-          <a
+          {/* <a
             href="https://leetcode.com/yourleetcodeusername"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
           >
             <SiLeetcode />
-          </a>
+          </a> */}
         </div>
       </div>
 

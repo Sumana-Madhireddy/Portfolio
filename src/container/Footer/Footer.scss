@@ -1,6 +1,6 @@
 .footer {
-    background-color: #030303; /* Matches your portfolio theme */
-    color: #e4e4e4; /* Light gray for text */
+    background-color: #030303; 
+    color: #e4e4e4; 
     text-align: center;
     padding: 2rem 1rem;
   
@@ -15,14 +15,11 @@
   
       h2 {
         font-size: 1.8rem;
-        // color: #ffffff;
         color: var(--goldenYellow-color);
       }
   
       p {
         font-size: 1rem;
-        // color: #c0c0c0;
-        // color: #f7d033dc;
       }
     }
   
@@ -35,12 +32,10 @@
       .social-link {
         font-size: 2rem;
         color: #e4e4e4;
-        // color: var(--goldenYellow-color);
         transition: transform 0.3s, color 0.3s;
   
         &:hover {
           transform: scale(1.2);
-        //   color: #ffffff;
           color: var(--goldenYellow-color);
         }
       }
@@ -48,7 +43,6 @@
   
     &__bottom {
       font-size: 0.9rem;
-    //   color: #6b7688;
       color: #e4e4e4;
       p {
         margin: 0;

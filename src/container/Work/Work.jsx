@@ -96,7 +96,6 @@ const Work = () => {
           <VerticalTimelineElement
             key={index}
             contentStyle={{
-              // background: "#1d1836",
               background: "#1a1a1a",
               color: "#e4e4e4",
               borderRadius: "10px",
