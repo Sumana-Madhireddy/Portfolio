@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import { CgWebsite } from "react-icons/cg";
@@ -6,8 +6,24 @@ import { IoCodeSlash } from "react-icons/io5";
 import { AiOutlineDatabase } from "react-icons/ai";
 import { CiMobile3 } from "react-icons/ci";
 import "./About.scss";
+import {images} from "../../constants";
 
 function About() {
+
+  const [role, setRole] = useState('Software');
+
+  useEffect(() => {
+    const roles = ['Software', 'Fullstack', 'Backend'];
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % roles.length;  // Loop through the roles
+      setRole(roles[index]);
+    }, 2000); // Change every 2 seconds
+
+    return () => clearInterval(interval);  // Cleanup interval on unmount
+  }, []);
+
   const tileVariants = {
     hidden: (direction) => ({
       opacity: 0,
@@ -21,7 +37,6 @@ function About() {
       transition: { type: "spring", bounce: 0.3, duration: 0.8 },
     },
   };
-  
 
   return (
     <section id="about" className="about-section">
@@ -53,15 +68,13 @@ function About() {
         >
           <h2>Who <span>am I?</span></h2>
           <p>
-            A passionate and results-driven software developer with a strong
-            foundation in full-stack web development, machine learning, and data
-            science.
+            I'm a software developer who thrives on building innovative, user-centric solutions, 
+            <br></br>whether it's optimizing e-commerce platforms, developing AI models, or creating seamless mobile apps.
           </p>
         </motion.div>
 
-        {/* Skills Tile */}
         <motion.div
-          className="tile skills-tile"
+          className="tile education-tile"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -69,26 +82,31 @@ function About() {
           custom="up"
           whileHover={{ scale: 1.05 }}
         >
-          <h3><span>Services</span> I offer</h3>
-          <div className="skills-icons">
-            <div >
-              <CgWebsite style={{ height: "20px", width: "20px" }} />
-              <p>Frontend</p>
+          <h3>Education</h3>
+          <div className="education-info">
+            <div className="education-school">
+              <img src={images.UB} alt="University at Buffalo" className="education-logo" />
+              <div>
+                <p className="university-name"><strong>University at Buffalo, SUNY</strong></p>
+                <p className="degree"><strong>Master of Science (MS) in Computer Science and Engineering</strong></p>
+                <p className="duration"><em>Aug 2023 - Dec 2024 | Grade: 3.75</em></p>
+              </div>
             </div>
-            <div >
-              <IoCodeSlash style={{ height: "18px", width: "18px" }} />
-              <p>Backend</p>
-            </div>
-            <div >
-              <AiOutlineDatabase style={{ height: "18px", width: "18px" }} />
-              <p>DataBase</p>
-            </div>
-            <div >
-              <CiMobile3 style={{ height: "20px", width: "20px" }} />
-              <p>Mobile</p>
+
+            <div className="coursework">
+              <p><strong>Courses:</strong></p>
+              <ul className="courses-list">
+                <li>Analysis of Algorithms</li>
+                <li>Machine Learning</li>
+                <li>Operating Systems</li>
+                <li>Data-Intensive Computing</li>
+                <li>Deep Learning</li>
+                <li>Database & Management Systems</li>
+              </ul>
             </div>
           </div>
         </motion.div>
+
 
         {/* Quote Tile */}
         <motion.div
@@ -100,7 +118,7 @@ function About() {
           custom="left"
           whileHover={{ scale: 1.05 }}
         >
-          <p>"The only way to do great work is to love what you do."</p>
+          <p>Always <span>learning</span> and <span>evolving</span> with every project!</p>
         </motion.div>
 
         {/* Role Tile */}
@@ -113,15 +131,38 @@ function About() {
           custom="right"
           whileHover={{ scale: 1.05 }}
         >
-          <h3>Software <span>Developer</span></h3>
+          <h3>
+            <motion.div
+              key={role} 
+              initial={{ rotateX: -90 }}
+              animate={{ rotateX: 0 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.1, 
+              }}
+              style={{
+                display: 'inline-block',
+                width: '120px',
+                height: '40px',
+                color: '#1e1e1e',
+                background: 'var(--goldenYellow-color)',
+                borderRadius: '5px',
+                textAlign: 'center',
+                lineHeight: '40px',
+                perspective: '500px', 
+                transformStyle: 'preserve-3d',
+              }}
+            >
+              {role}
+            </motion.div>
+            <span> Developer</span>
+          </h3>
           <p>Crafting scalable, innovative, and impactful solutions.</p>
         </motion.div>
 
-        
-
         {/* Info Tile 1 */}
         <motion.div
-          className="tile info1-tile"
+          className="tile service-tile"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -129,11 +170,25 @@ function About() {
           custom="down"
           whileHover={{ scale: 1.05 }}
         >
-          <h3>Current <span>Projects</span></h3>
-          <p>
-            Working on Solenne, a modern e-commerce platform, and RedPrint, a
-            gym management system.
-          </p>
+          <h3>Services I offer</h3>
+          <div className="skills-icons">
+            <div>
+              <CgWebsite style={{ height: "20px", width: "20px" }} />
+              <p>Frontend</p>
+            </div>
+            <div>
+              <IoCodeSlash style={{ height: "18px", width: "18px" }} />
+              <p>Backend</p>
+            </div>
+            <div>
+              <AiOutlineDatabase style={{ height: "18px", width: "18px" }} />
+              <p>DataBase</p>
+            </div>
+            <div>
+              <CiMobile3 style={{ height: "20px", width: "20px" }} />
+              <p>Mobile</p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Info Tile 2 */}
@@ -148,8 +203,7 @@ function About() {
         >
           <h3>What <span>Drives</span> Me</h3>
           <p>
-            I aim to create user-centric, efficient, and innovative solutions
-            that solve real-world problems.
+             is the passion for solving complex problems and creating impactful solutions that enhance user experiences, streamline processes, and bring ideas to life through technology
           </p>
         </motion.div>
       </div>

@@ -22,6 +22,7 @@ import firebase from '../assets/firebase.png';
 
 import deloitte from '../assets/deloitte.png';
 import redprint from '../assets/redprint.png';
+import UB from '../assets/UB.png';
 
 import profile from '../assets/profile.jpg';
 import keshav from '../assets/keshav.jpg';
@@ -59,6 +60,7 @@ export default {
   firebase,
   deloitte,
   redprint,
+  UB,
   profile,
   keshav,
   Revathi,
