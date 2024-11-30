@@ -68,8 +68,8 @@ function About() {
         >
           <h2>Who <span>am I?</span></h2>
           <p>
-            I'm a software developer who thrives on building innovative, user-centric solutions, 
-            <br></br>whether it's optimizing e-commerce platforms, developing AI models, or creating seamless mobile apps.
+          I’m a software developer focused on building user-centric solutions, 
+          whether optimizing e-commerce platforms, developing AI models, or creating seamless mobile apps.
           </p>
         </motion.div>
 
@@ -140,18 +140,7 @@ function About() {
                 duration: 0.5,
                 delay: 0.1, 
               }}
-              style={{
-                display: 'inline-block',
-                width: '120px',
-                height: '40px',
-                color: '#1e1e1e',
-                background: 'var(--goldenYellow-color)',
-                borderRadius: '5px',
-                textAlign: 'center',
-                lineHeight: '40px',
-                perspective: '500px', 
-                transformStyle: 'preserve-3d',
-              }}
+              className="dice-role"
             >
               {role}
             </motion.div>
@@ -203,7 +192,7 @@ function About() {
         >
           <h3>What <span>Drives</span> Me</h3>
           <p>
-             is the passion for solving complex problems and creating impactful solutions that enhance user experiences, streamline processes, and bring ideas to life through technology
+            The passion for solving complex problems and creating solutions that enhance user experiences, streamline processes, and bring ideas to life through technology.
           </p>
         </motion.div>
       </div>

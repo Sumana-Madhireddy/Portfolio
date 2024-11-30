@@ -73,6 +73,18 @@
       span {
         color: white;
       }
+      .dice-role {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        color: #1e1e1e;
+        background: var(--goldenYellow-color);
+        border-radius: 5px;
+        text-align: center;
+        line-height: 40px;
+        perspective: 500px;
+        transform-style: preserve-3d;
+      }
     }
 
     .education-tile {
