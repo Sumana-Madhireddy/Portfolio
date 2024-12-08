@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.3ffdf965.css",
-    "main.js": "/Portfolio/static/js/main.20bc69b2.js",
+    "main.js": "/Portfolio/static/js/main.cbf1cae9.js",
     "static/media/Lahari.jpg": "/Portfolio/static/media/Lahari.9b32e85ab8f6a9272d44.jpg",
     "static/media/solenne.png": "/Portfolio/static/media/solenne.40ad9fe68ddaf78abc82.png",
     "static/media/churnprediction.png": "/Portfolio/static/media/churnprediction.bce4e7dc253301b8c3f7.png",
@@ -22,10 +22,10 @@
     "static/media/git.png": "/Portfolio/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/Portfolio/index.html",
     "main.3ffdf965.css.map": "/Portfolio/static/css/main.3ffdf965.css.map",
-    "main.20bc69b2.js.map": "/Portfolio/static/js/main.20bc69b2.js.map"
+    "main.cbf1cae9.js.map": "/Portfolio/static/js/main.cbf1cae9.js.map"
   },
   "entrypoints": [
     "static/css/main.3ffdf965.css",
-    "static/js/main.20bc69b2.js"
+    "static/js/main.cbf1cae9.js"
   ]
 }
