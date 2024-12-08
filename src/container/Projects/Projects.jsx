@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import Typewriter from 'typewriter-effect';
-import { FaGithub } from 'react-icons/fa';
-import './Projects.scss';
-import { projects } from '../../constants';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
+import { FaGithub } from "react-icons/fa";
+import "./Projects.scss";
+import { projects } from "../../constants";
 import { IoIosMore } from "react-icons/io";
 
 const Projects = () => {
@@ -21,7 +21,7 @@ const Projects = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { type: 'spring', stiffness: 200, damping: 10 },
+      transition: { type: "spring", stiffness: 200, damping: 10 },
     },
   };
 
@@ -35,7 +35,7 @@ const Projects = () => {
       >
         <Typewriter
           options={{
-            strings: ['Projects'],
+            strings: ["Projects"],
             autoStart: true,
             loop: true,
           }}
@@ -77,16 +77,16 @@ const Projects = () => {
                   )}
                 </ul>
               </div>
-              {/* See More Button */}
-              {project.details && (
+              
+              {/* {project.details && (
                 <button
                   className="see-more-btn"
                   onClick={() => toggleFullDescription(index)}
                 >
-                  {isFullDescriptionVisible[index] ? 'See Less' : 'See More'} 
+                  {isFullDescriptionVisible[index] ? "See Less" : "See More"}
                   <IoIosMore />
                 </button>
-              )}
+              )} */}
 
               <div className="project-card-horizontal__techs">
                 {project.technologies.map((tech, idx) => (
