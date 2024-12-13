@@ -13,7 +13,7 @@ const experience = [
   {
     position: "Software Development Engineer",
     company: "RedPrint",
-    date: "August 2024 - Ongoing",
+    date: "January 2024 - Ongoing",
     icon: images.redprint,
     details: [
       "Led the development of a gym-focused Android app using React Native, integrating NFC for quick access to instructional videos and personalized workouts.",
