@@ -159,7 +159,7 @@ function About() {
           custom="down"
           whileHover={{ scale: 1.05 }}
         >
-          <h3>Services I offer</h3>
+          <h3>Areas of Interest</h3>
           <div className="skills-icons">
             <div>
               <CgWebsite style={{ height: "20px", width: "20px" }} />
