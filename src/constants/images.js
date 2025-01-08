@@ -35,6 +35,7 @@ import swinunet from '../assets/swinunet.png';
 import language_translation from '../assets/language_translation.png';
 import animefilmpulse from '../assets/animefilmpulse.png';
 import churnprediction from '../assets/churnprediction.png';
+import snakegame from '../assets/snakegame.png';
 
 export default {
   api,
@@ -71,4 +72,5 @@ export default {
   language_translation,
   animefilmpulse,
   churnprediction,
+  snakegame,
 };

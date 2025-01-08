@@ -40,6 +40,25 @@ const projects = [
     ],
   },
   {
+    title: "Snake Game using C#",
+    description:
+      ["Developed a console-based Snake game in C#, implementing dynamic grid rendering, collision detection, and user input handling to control the snake’s movement and game logic.",
+      "Optimized gameplay mechanics by introducing adaptive speed increments based on player progress, enhancing user experience and demonstrating proficiency in object-oriented programming and C# development."],
+    image: images.snakegame,
+    technologies: ["C#", "Visual Studio"],
+    github: "https://github.com/Sumana-Madhireddy/SnakeGame",
+    duration: {
+      start: "Ongoing",
+      end: "Ongoing",
+    },
+    details: `
+        Developed a console-based Snake game in C#, implementing dynamic grid rendering, collision detection, and user
+        input handling to control the snake’s movement and game logic.
+      `,
+    team: [
+    ],
+  },
+  {
     title: "Dense Crowd Counting using Swin-UNet",
     description: [
       "A hybrid deep learning architecture combining U-Net with Swin Transformers for accurate dense crowd counting.",
