@@ -11,7 +11,7 @@ const experience = [
   {
     position: "Software Development Engineer",
     company: "RedPrint",
-    date: "June 2024 - Ongoing",
+    date: "May 2024 - Ongoing",
     icon: images.redprint,
     details: [
       "Led the development of a gym-focused Android app using React Native, integrating NFC for quick access to instructional videos and personalized workouts.",
@@ -51,7 +51,7 @@ const experience = [
     ]
   },
   {
-    position: "Developer Intern",
+    position: "Software Developer Intern",
     company: "Deloitte",
     date: "May 2022 - August 2022",
     icon: images.deloitte,
