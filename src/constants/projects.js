@@ -59,29 +59,6 @@ const projects = [
     ],
   },
   {
-    title: "Dense Crowd Counting using Swin-UNet",
-    description: [
-      "A hybrid deep learning architecture combining U-Net with Swin Transformers for accurate dense crowd counting.",
-      "Trained on large crowd counting datasets (UCF-QNRF, ShanghaiTech, UCF-CC-50) to estimate crowd density and head counts in highly congested areas.",
-    ],
-    image: images.swinunet,
-    technologies: ["Python", "PyTorch", "OpenCV", "Swin-Transformers", "U-Net"],
-    github: "https://github.com/ubcse573-vs/project-groups-project_keshavku_sumanama",
-    duration: {
-      start: "May 2024",
-      end: "August 2024",
-    },
-    details: `
-        The model processes images through a Swin-UNet architecture, generating density maps to estimate crowd count.
-        Three branches in the network: Encoder for feature extraction, Density Map Estimation (DME) for crowd density, and a reinforcement branch for faster convergence.
-        Utilizes a combined loss function of Mean Absolute Error (MAE) for density maps and Binary Cross Entropy (BCE) for reinforcement maps.
-        Evaluated on multiple public datasets (UCF-QNRF, ShanghaiTech Part-A, UCF-CC-50) to ensure robustness in diverse crowd scenarios.
-      `,
-    team: [
-      { name: "Keshav", image: images.keshav , linkedin: "https://www.linkedin.com/in/keshkuma/"},
-    ],
-  },
-  {
     title: "Convergence of Senses: A Multimodal Approach for Translation",
     // description:
     //   "Developed a Seq2seq language translation model using transformers, integrating speech recognition and text input to enhance accessibility.",

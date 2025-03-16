@@ -10,8 +10,26 @@ import { images } from "../../constants";
 const experience = [
   {
     position: "Software Development Engineer",
+    company: "Benderson Development",
+    date: "March 2025 - Ongoing",
+    icon: images.BD,
+    details: [
+    ],
+    technologies: [
+      "MSSQL",
+      "C#",
+      "ASP.NET",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Node.js",
+      "Postman"
+    ]
+  },
+  {
+    position: "Software Development Engineer",
     company: "RedPrint",
-    date: "May 2024 - Ongoing",
+    date: "May 2024 - December 2024",
     icon: images.redprint,
     details: [
       "Led the development of a gym-focused Android app using React Native, integrating NFC for quick access to instructional videos and personalized workouts.",

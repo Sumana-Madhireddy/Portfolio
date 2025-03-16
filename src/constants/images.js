@@ -20,9 +20,10 @@ import docker from '../assets/docker.png';
 import aws from '../assets/aws.png';
 import firebase from '../assets/firebase.png';
 
-import deloitte from '../assets/deloitte.png';
+import BD from '../assets/benderson_development_logo.jpeg';
 import redprint from '../assets/redprint.png';
 import UB from '../assets/UB.png';
+import deloitte from '../assets/deloitte.png';
 
 import profile from '../assets/profile.jpg';
 import keshav from '../assets/keshav.jpg';
@@ -59,6 +60,7 @@ export default {
   docker,
   aws,
   firebase,
+  BD,
   deloitte,
   redprint,
   UB,
