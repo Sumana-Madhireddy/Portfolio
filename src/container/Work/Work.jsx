@@ -14,16 +14,18 @@ const experience = [
     date: "March 2025 - Ongoing",
     icon: images.BD,
     details: [
+      "Migrated data from Microsoft Access to MRI Studio, ensuring seamless data transition and optimization.",
+      "Developed API logic builders in C# to enhance system functionality and streamline processes.",
+      "Built and customized pages using Page Builder, utilizing HTML, CSS, JavaScript, and Microsoft SQL Server queries from Data Loader.",
+      "Collaborated with the Collections Team to improve workflows and enhance data accessibility."
     ],
     technologies: [
       "MSSQL",
       "C#",
-      "ASP.NET",
       "JavaScript",
       "HTML",
       "CSS",
-      "Node.js",
-      "Postman"
+      "Node.js"
     ]
   },
   {
