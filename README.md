@@ -24,8 +24,8 @@ Check versions:
 ```bash
 node -v
 npm -v
-
-🛠️ Install Dependencies
+```
+## 🛠️ Install Dependencies
 
 Clone the repository and install dependencies:
 ```bash
