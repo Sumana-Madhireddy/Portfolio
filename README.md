@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 💼 Portfolio Website (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal **portfolio website** built with **React** using Create React App.  
+It showcases my projects, skills, and experience, and is deployed using **GitHub Pages**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
+- React (Create React App)
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- GitHub Pages for deployment
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📂 Project Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ✅ Prerequisites
+Make sure you have the following installed:
+- **Node.js** (v16 or later recommended)
+- **npm** (comes with Node.js)
 
-### `npm test`
+Check versions:
+```bash
+node -v
+npm -v
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Install Dependencies
 
-### `npm run build`
+Clone the repository and install dependencies:
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+npm install
+```
+▶️ Run Locally (Development)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To start the development server:
+```bash
+npm start
+```
+Opens automatically at:
+👉 http://localhost:3000
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🧪 Run Tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To launch tests in watch mode:
+```bash
+npm test
+```
+Runs all available test files
+Press q to exit watch mode
 
-### `npm run eject`
+🏗️ Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create an optimized production build:
+```bash
+npm run build
+```
+Output is generated in the build/ folder
+Code is minified and optimized
+Ready for deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🌍 Deploy to GitHub Pages
+✅ One-time Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install gh-pages:
+```bash
+npm install gh-pages --save-dev
+```
+Add the following to package.json:
+```bash
+"homepage": "https://<your-github-username>.github.io/<repo-name>"
+```
+Add deployment scripts:
+```bash
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Deploy Latest Changes
+```bash
+npm run deploy
+```
 
-## Learn More
+This will:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Build the app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Push the build folder to the gh-pages branch
 
-### Code Splitting
+Publish the site automatically
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔁 Updating the Live Site
 
-### Analyzing the Bundle Size
+Whenever you make changes:
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📄 License
 
-### Making a Progressive Web App
+This project is for personal use and learning purposes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you want, I can:
+- Personalize this with **your name + live site link**
+- Add **project screenshots**
+- Make a **super recruiter-friendly README** (short + flashy)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Just say the word 👌
