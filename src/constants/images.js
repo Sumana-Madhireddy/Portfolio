@@ -19,6 +19,7 @@ import mysql from '../assets/mysql.png';
 import docker from '../assets/docker.png';
 import aws from '../assets/aws.png';
 import firebase from '../assets/firebase.png';
+import springboot from '../assets/springbootImg.png';
 
 import BD from '../assets/benderson_development_logo.jpeg';
 import redprint from '../assets/redprint.png';
@@ -60,6 +61,7 @@ export default {
   docker,
   aws,
   firebase,
+  springboot,
   BD,
   deloitte,
   redprint,

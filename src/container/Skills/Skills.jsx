@@ -24,6 +24,7 @@ const skills = [
   { name: "MongoDB", icon: images.mongodb },
   { name: "AWS", icon: images.aws },
   { name: "Firebase", icon: images.firebase },
+  { name: "Springboot", icon: images.springboot },
 ];
 
 const Skills = () => {

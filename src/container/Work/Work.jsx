@@ -14,18 +14,19 @@ const experience = [
     date: "March 2025 - Ongoing",
     icon: images.BD,
     details: [
-      "Migrated data from Microsoft Access to MRI Studio, ensuring seamless data transition and optimization.",
-      "Developed API logic builders in C# to enhance system functionality and streamline processes.",
-      "Built and customized pages using Page Builder, utilizing HTML, CSS, JavaScript, and Microsoft SQL Server queries from Data Loader.",
+      "Built and scaled a Property Master platform supporting Accounting, Finance, and Legal teams to manage 1,000+ properties, enabling faster and more accurate property and amenity management.",
+      "Designed and optimized a complex relational database (20+ tables) with full historical tracking for 13 core property amenities, improving data integrity, auditability, and reducing manual corrections by 40%.",
+      "Improved system performance and usability by optimizing queries and delivering a responsive UI, cutting page load times by 30% and increasing Accounting team data entry speed by 35%.",
       "Collaborated with the Collections Team to improve workflows and enhance data accessibility."
     ],
     technologies: [
-      "MSSQL",
-      "C#",
+      "MySQL",
+      "Java",
       "JavaScript",
       "HTML",
       "CSS",
-      "Node.js"
+      "Node.js",
+      "SpringBoot"
     ]
   },
   {
